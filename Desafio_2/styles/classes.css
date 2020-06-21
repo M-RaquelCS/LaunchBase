@@ -1,0 +1,115 @@
+:root {
+    --color-purple: #7159c1;
+    --color-alink: #6548c2;
+    --color-black: #000000;
+    --color-white: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    background: var(--color-black);
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-white);
+    background-image: url(https://skylab.rocketseat.com.br/static/media/MountainsOpacity.a4edba24.png);
+}
+header{
+    padding: 30px;
+    background-color: var(--color-black);
+    border-bottom: 1px solid var(--color-white);
+    display: flex;
+}
+header img {
+    display: flex;
+    justify-content: center;
+    width: 15px;
+}
+header a{
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0 2px;
+}
+
+/* Cards */
+
+.cards{
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+}
+
+.card_image-container img{
+    width: 100%;
+    height: 190px;
+
+}
+
+.card_content, .card_info {
+    padding: 21px;
+    text-align: center;
+
+}
+
+.card_content{
+    margin-top: 10px;
+}
+
+.card_price {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    text-align: center;
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-top: 30%;
+}
+
+/* modal */
+
+.modal-overlay{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal{
+    color: var(--color-black);
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+/* modal active*/
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}

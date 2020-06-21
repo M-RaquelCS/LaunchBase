@@ -1,0 +1,126 @@
+:root {
+    --color-purple: #7159c1;
+    --color-alink: #6548c2;
+    --color-black: #000000;
+    --color-white: #ffffff;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body {
+    background: var(--color-black);
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-white);
+    /*background-image: url('https://i.pinimg.com/564x/20/c0/f3/20c0f39626b9e0828b599d8e4975fec7.jpg'); */
+}
+
+
+header{
+    padding: 30px;
+    background-color: var(--color-black);
+    border-bottom: 1px solid var(--color-purple);
+    display: flex;
+}
+header img {
+    display: flex;
+    justify-content: center;
+    width: 15px;
+}
+header a{
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0 2px;
+}
+
+
+#links{
+    text-align: center;
+}
+#links a{
+    color: var(--color-white);
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 16px;
+    text-decoration: none;
+    padding-bottom: 3px;
+}
+#links a:hover{
+    color:var(--color-alink);
+    transition: 100ms;
+}
+
+
+main{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+#wrapper {
+    text-align: center;
+    margin-left: 300px;
+    margin-top: 60px;
+}
+#wrapper img {
+    border-radius: 50%;
+    height: 200px;
+}
+#wrapper h1{
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 900;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+#text{
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+    
+}
+#text h2, h3{
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+#text h3{
+    margin-top: 25px;
+}
+#text p{
+    max-width: 550px;
+    font-size: 24px;
+    line-height: 34px;
+    margin-left: 30px;
+}
+
+#text li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 10px 25px;
+}
+#text li a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+#text li a:hover{
+    color:var(--color-alink);
+    transition: 100ms;
+}
+#text img{
+    margin-left: 280px;
+    margin-top: -150px;
+    margin-bottom: 150px;
+    height: 150px;
+}
