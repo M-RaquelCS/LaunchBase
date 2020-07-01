@@ -1,0 +1,19 @@
+{% extends 'layout.njk'%}
+
+{% block title %}
+    <title>Hey! It's ERROR</title>
+{% endblock title%}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/not-found.css">
+{% endblock styles %}
+
+{% block header %}
+    <a href="/"><img src="https://rocketseat.com.br/static/images/logo-rocketseat.svg" alt="Rocketseat"></a>
+{% endblock %}
+
+{% block content %}
+    <div id="wrapper">
+        <h1>ERROR 404: Request not found </h1>
+    </div>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'layout.njk' %}
+
+    {% block head %}
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {% endblock %}
+
+    {% block styles %}
+        <link rel="stylesheet" href="/styles/classes.css">
+    {% endblock styles %}
+
+    {% block title %}
+        <title>Hey!On here is Course</title>   
+    {% endblock title %}
+
+{% block header %}
+        <img src="/assets/arrow-leftW.svg" alt="Rocketseat">
+        <a href="/">Voltar ao Ínicio</a>
+        <div id='links'>
+            <!--<a href="tel:+5547992078767">Telephone</a> -->
+            <!--<a href="/views/classes.html">Classes</a> -->
+            <!--<a href="/views/about.html">About</a> -->
+        </div>
+{% endblock header %}
+
+{% block content %}
+    <section class="cards">
+
+            <div class="card" id='{{item.id}}'>
+                <div class="card_image-container">
+                    <img src="{{item.srcImg}}" alt="{{item.id}}">
+                </div>
+                <div class="card_content">
+                    <p>{{item.title}}</p>
+                </div>
+                <div class="card_info">
+                    <p>{{item.duration}}</p>
+                    <p class="card_price">{{item.price}}</p>
+                </div>
+            </div>
+        
+    </section>
+
+{% endblock %}

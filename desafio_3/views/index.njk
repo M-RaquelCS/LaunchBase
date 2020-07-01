@@ -1,0 +1,31 @@
+{% extends 'layout.njk' %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/index.css">
+{% endblock styles %}
+
+    {% block title %}
+        <title>Hey, it's Rocketseat</title>
+    {% endblock title %}
+
+    {% block header %}
+            <a href="/"><img src="https://rocketseat.com.br/static/images/logo-rocketseat.svg" alt="Rocketseat"></a>
+            <div class='links'>
+                <a href="https://discordapp.com/invite/gCRAFhc" target="_blanck">Community</a>
+                <!--<a href="mailto:M-Raquel@outlook.com.brx">E-mail</a> -->
+                <a href="/about">About</a>
+                <a href="/portfolio">Courses</a>
+            </div>
+    {% endblock %}
+
+    {% block content %}
+        <div id="wrapper">
+            <h1>{{data.title}}</h1>
+            <p>{{data.description}}</p>
+        </div>
+        <div class='links' id="links-footer">
+            {%for link in data.links%}
+                <a href="{{link.url}}">{{link.name}}</a>
+            {%endfor%}
+        </div>
+    {% endblock %}

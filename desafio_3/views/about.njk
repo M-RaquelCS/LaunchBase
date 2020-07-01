@@ -1,0 +1,46 @@
+{% extends 'layout.njk' %}
+    {% block styles %}
+        <link rel="stylesheet" href="/styles/about.css">
+    {% endblock styles %}
+
+    {% block title %}
+        <title>Hey!On here is About</title> 
+    {% endblock title %}
+
+    {% block header %}
+        <img src="/assets/arrow-left.svg" alt="Rocketseat">
+        <a href="/">Voltar ao Ínicio</a>
+    {% endblock header %}
+    
+    {% block content %}
+        <main>
+            <div id="wrapper">
+                <img src="https://scontent.fcau2-1.fna.fbcdn.net/v/t1.0-9/104169738_687672685112542_1468337677738709328_n.png?_nc_cat=108&_nc_sid=09cbfe&_nc_eui2=AeFRFT0lkNTR-hjkz1-gAlp-sd8e2frMzMOx3x7Z-szMw8W930fGhuJi9js3P3qIBKWLcNhknznoO121w4M8iK58&_nc_oc=AQn2cj4Q9CJ0q0ty4-eyIMonH5hQ3XhmZEcWQ6RIwZzBJjmTMIsQGpAmfdo_5kj7vm8&_nc_ht=scontent.fcau2-1.fna&oh=7b3af997c4a6f82795ed7a62abf46c21&oe=5F106F73" alt="Rocketseat">
+                <h1>Rocketseat</h1>
+            </div>
+            
+            <div id="text">
+                <h2>Empresa voltada para Educação à distância</h2>
+                <p>"Mais do que uma plataforma de educação em tecnologia, somos uma comunidade incrível de programadores em busca do próximo nível 🚀"</p>
+                <h3>Principais Tecnologias usadas para ensino:</h3>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/javascript" target="_blanck">Javascript</a></li>
+                    <li><a href="https://www.typescriptlang.org/" target="_blanck">Typescript</a></li>
+                    <li><a href="https://nodejs.org/" target="_blanck">NodeJs</a></li>
+                    <li><a href="https://pt-br.reactjs.org/" target="_blanck">React</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/SQL" target="_blanck">SQL</a></li>
+                </ul>
+                <img src="https://rocketseat.com.br/static/images/update/trofeu-home.svg" alt="trofeu">
+            </div>
+        </main>
+        
+        
+        
+        <div id='links'>
+            <a href="https://discordapp.com/invite/gCRAFhc" target="_blanck">Discord</a>
+            <a href="https://github.com/Rocketseat" target="_blanck">GitHub</a>
+            <a href="https://www.linkedin.com/school/rocketseat/" target="_blanck">Linkedin</a>
+            <a href="https://www.facebook.com/rocketseat" target="_blanck">Facebook</a>
+            <a href="https://www.instagram.com/rocketseat_oficial/" target="_blanck">Instagram</a>
+        </div>
+    {% endblock %}
